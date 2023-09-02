@@ -4,13 +4,21 @@ Este repositorio contiene las tareas y ejercicios resueltos del curso de program
 # Organización
 Las tareas se encuentran organizadas por tema en carpetas:
 
+
 Introducción a Python
+
 Tipos de datos
+
 Condicionales
+
 Bucles
+
 Funciones
+
 POO
+
 Módulos y paquetes
+
 Dentro de cada carpeta están los archivos .py con los ejercicios resueltos.
 
 # Instrucciones
