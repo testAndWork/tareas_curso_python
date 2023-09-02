@@ -5,7 +5,7 @@ Este repositorio contiene las tareas y ejercicios resueltos del curso de program
 Las tareas se encuentran organizadas por tema en carpetas:
 
 
-Introducción a Python
+Introducción a Python 
 
 Tipos de datos
 
