@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+</head>
+<body>
+    <section><h1>Usando Tablas en HTML</h1></section>
+    <table>
+        <h2>Creacion de una tabla usando el entorno <p style="color: brown;">tr</p></h2>
+        <!--Sobre este se construye todo lo referente a la tabla-->
+        <tr>
+            <!--Define una fila de la tabla-->
+            <td>Celda 1</td>
+            <td>Celda 2</td>
+            <td>Celda 3</td>
+        </tr>
+        <tr>
+            <td>Celda 4</td>
+            <td>Celda 5</td>
+            <td>Celda 6</td>
+        </tr>
+        <br>
+    </table>
+    <!--*************************************************************************************-->
+    <section><h2 style="font-family: 'Courier New', Courier, monospace;">Tabla con encabezado</h2></section>
+    <table border="2">
+        <thead>
+            <tr>Nombre  </tr><tr>  Codigo</tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Nombre asignado  </td>
+                <td>  12345567</td>
+            </tr>
+            <tr>
+                <td>Nombre 1  </td>
+                <td>  A12345</td>
+            </tr>
+        </tbody>
+    </table>
+    <!--*************************************************************************************-->
+    <!--*************************************************************************************-->
+    <section><h2 style="font-family: 'Courier New', Courier, monospace;">Tabla con caption</h2></section>
+    <table border="2">
+        <caption style="color: blueviolet;">Este el es el caption de la tabla</caption>
+        <thead>
+            <tr>Nombre  </tr><tr>  Codigo</tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Nombre asignado  </td>
+                <td>  12345567</td>
+            </tr>
+            <tr>
+                <td>Nombre 1  </td>
+                <td>  A12345</td>
+            </tr>
+        </tbody>
+        <caption style="color: chocolate;">Este el es el caption de la tabla</caption>
+    </table>
+    <!--*************************************************************************************-->
+    <!--*************************************************************************************-->
+    <section><h2 style="font-family: 'Courier New', Courier, monospace;">Tabla con grupos de clumnas</h2></section>
+    <table border="2">
+        <colgroup>
+            <col style="background-color: beige;">
+            <col style="background-color: aquamarine;" span="2">
+        </colgroup>
+        <thead>
+            <tr>Nombre  </tr><tr>  Codigo</tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Nombre asignado  </td>
+                <td>  12345567</td>
+            </tr>
+            <tr>
+                <td>Nombre 1  </td>
+                <td>  A12345</td>
+            </tr>
+        </tbody>
+    </table>
+    <section><h2 style="font-family: 'Courier New', Courier, monospace;">Tabla con grupos de clumnas</h2></section>
+    <!--*************************************************************************************-->
+    <!--*************************************************************************************-->
+    <section><h2 style="font-family: 'Courier New', Courier, monospace;">Uso de nuevos atributos</h2></section>
+    <table border="2">
+        <colgroup>
+            <!--AGREGANDO COLOR A LAS COLUMNAS-->
+            <col style="background-color: beige;">
+            <col style="background-color: aquamarine;" span="2">
+        </colgroup>
+        <caption style="color: rgb(226, 52, 43);">Atributs scope end header</caption>
+        <thead>
+            <tr>
+                <th scope="col">Nombre  </th><th scope="col">  Codigo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Fila 1 </th>
+                <th headers="col">Dat 1</th>
+                <th headers="col">Dat 2</th>
+            </tr>
+        </tbody>
+    </table>
+    <section><h2 style="font-family: 'Courier New', Courier, monospace;">Uso de nuevos atributos</h2></section>
+    <!--*************************************************************************************-->
+    <!--*************************************************************************************-->
+    <section><h2 style="font-family: 'Courier New', Courier, monospace;">Tabla con colspan</h2></section>
+    <table border="2">
+        <caption style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">ColSpan</caption>
+        <tr>
+            <th>Nombre</th>
+            <th colspan="2">Info Contact</th>
+            <th>Este es el 3</th>
+        <tr>
+            <td>Nombre1</td>
+            <td>espaxcio 1</td>
+            <td>A12345</td>
+            <td>123456</td>
+        </tr>
+    </table>
+    <section><h2 style="font-family: 'Courier New', Courier, monospace;">Tabla con colspan</h2></section>
+    <!--*************************************************************************************-->
+    <section><h2 style="font-family: 'Courier New', Courier, monospace; color: darkgreen;">RowSpan para las tablas</h2></section>
+    <table border="2" style="background-color: beige;">
+        <caption style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">ColSpan</caption>
+        <tr>
+            <th style="background-color: rgb(159, 170, 252);">Nombre</th>
+            <th style="background-color: rgb(235, 235, 14);">Informacion de Contacto</th>
+        <tr>
+            <td rowspan="2">John Doe</td>
+            <td>Email: yonyon@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Celular: 3465667534</td>
+        </tr>
+    </table>
+    <section><h2 style="font-family: 'Courier New', Courier, monospace;">RowSpan para las tablas</h2></section>
+    <!--*************************************************************************************-->
+</body>
+</html>
