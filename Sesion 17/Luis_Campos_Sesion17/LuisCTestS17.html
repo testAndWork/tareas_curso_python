@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>Tablas</title>
+
+</head>
+<body>
+    <section><h1>Usando tablas en HTML</h1></section>
+    <h2>Creacion de una tabla<p style="color: red;">tr</p></h2>
+    <table border="1">
+        <tr>
+            <td>Celda1</td>
+            <td>Celda2</td>
+            <td>Celda3</td>
+        </tr>
+        <tr>
+        <td>Celda4</td>
+        <td>Celda 5</td>
+        <td>Celda 6</td>
+        </tr>
+        
+    </table>
+    <section><h2 style="font-family: 'Courier New', Courier, monospace;">Tabla con encabezado</h2></section>
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th><th>Codigo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Nombre asignado</td><td>12345678</td>
+            </tr>
+            <tr>
+                <td>Nombre1</td><td>9101122</td>
+            </tr>
+        </tbody>
+    </table>
+    <section><h2 style="font-family: 'Courier New', Courier, monospace;">Tabla con Caption</h2></section>
+
+    <table>
+        <caption style="color: aqua;">ESte es el caption de la tabla</caption>
+        <thead>
+            <tr>
+                <th>Nombre</th><th>Codigo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Nombre asignado</td><td>12345678</td>
+            </tr>
+            <tr>
+                <td>Nombre1</td><td>9101122</td>
+            </tr>
+        </tbody>
+        <caption style="color: chocolate;">ESte es el caption de la tabla</caption>
+    </table>
+
+    <section><h2 style="color: crimson;">Tablas con grupos de columnas</h2></section>
+    <table>
+        <colgroup>
+            <co style="background-color: beige;">
+            <col span="2" style="background-color: aquamarine;">
+        </colgroup>
+        <caption style="color: rgb(123, 131, 10);">ESte es el caption de la tabla</caption>
+        <thead>
+            <tr>
+                <th>Nombre</th><th>Codigo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Nombre asignado</td><td>12345678</td>
+            </tr>
+            <tr>
+                <td>Nombre1</td><td>9101122</td>
+            </tr>
+        </tbody>
+    </table>
+    <section><h2 style="color: crimson;">Uso de nuevos atributos</h2></section>
+    <table>
+        
+        <caption style="color: rgb(123, 131, 10);">Atributos scope and header</caption>
+        <thead>
+            <tr>
+                <th scope="col">Nombre</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Fila1</th>
+                <td headers="col1">Dat 1</th>
+                <td headers="col2">Dat 2</td>
+            </tr>
+        </tbody>
+    </table>
+    <section>
+        <h2 style="color: darkred;">Tabla con colspan</h2>
+    </section>
+    <table>
+        <caption style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Colspan </caption>
+        <tr>
+            <th>Nombre</th>
+            <th colspan="2">Info contact</th>
+            <th>Este es el 3</th>
+        </tr>
+        <tr>
+            <td>Nombre 1</td>
+            <td>Espacio 1</td>
+            <td>A123456</td>
+            <td>123456</td>
+        </tr>
+
+    </table>
+        <colgroup>
+            <co style="background-color: beige;">
+            <col span="2" style="background-color: aquamarine;">
+        </colgroup>
+    <section><h2 style="color: darkgreen;">Rowspan tablas</h2></section>
+    <table style="background-color: burlywood;">
+        <tr>
+            <th style="background-color: gray;">Nombre</th>
+            <th style="background-color: coral;">Informacion de contacto</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Jhon Doe</td>
+            <td>Email: yonyon@gmail.com</td>
+
+        </tr>
+        <tr>
+            <td>Celular : 21212312</td>
+        </tr>
+    </table>
+
+
+<section>.</section>
+<section>.</section>
+<section>.</section>
+</body>
+
+</html>
