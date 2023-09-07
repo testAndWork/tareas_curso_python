@@ -1,1 +1,0 @@
-print('Hola, soy una persona en el mundo')
