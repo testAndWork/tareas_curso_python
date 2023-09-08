@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usod de la Etiqueta textarea </title>
+</head>
+<body>
+    <section><h2 style="color: brown;">Uso de la Etiqueta form </h2></section>
+    <p>Se utiliza para recopilar texto largo, como comentarios o descripciones</p>
+
+    <form action="/procesar-formulario">
+        <label for="comentario">Comentario</label>
+        <textarea name="comentario" id="comentario" cols="20" rows="12"></textarea>
+
+        <label for="selection">Selecciona una Opción:</label>
+        <select name="selection" id="selection">
+            <option value="op 1">Opcion 1</option>
+            <option value="op 2">Opcion 2</option>
+            <option value="op 3">Opcion 3</option>
+            <option value="op 4">Opcion 4</option>
+        </select>
+
+    <p><h2 style="color: blueviolet;">Etiqueta select</h2></p>
+
+    <label>Opcion 1: <input type="radio" name="opcion" value="opcion1"></label>
+    <label>Opcion 2: <input type="radio" name="opcion" value="opcion2"></label>
+    <label>Opcion 3: <input type="radio" name="opcion" value="opcion3"></label>
+
+
+    <p><h2 style="color: blueviolet;">Etiqueta checkbox</h2></p>
+
+    <label>Opcion 1: <input type="checkbox" name="opcion" value="opcion1"></label>
+    <label>Opcion 2: <input type="checkbox" name="opcion" value="opcion2"></label>
+    <label>Opcion 3: <input type="checkbox" name="opcion" value="opcion3"></label>
+    </form>
+</body>
+</html>

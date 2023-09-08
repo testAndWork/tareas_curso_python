@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etiqueta input</title>
+</head>
+<body>
+    <section><h2 style="color: brown;">Uso de la Etiqueta input y sus variantes </h2></section>
+    <form>
+        <p>Tipo text</p>
+        <ul>
+            <li>Crea el campo de texto en una linea</li>
+            <li>Acepta cualquier tipo de texto alfanumerico</li>
+        </ul>
+        <label for="username">Username</label>
+        <input type="text" name="username">
+
+
+        <p>Tipo "password"</p>
+        <ul>
+            <li>Como el campo de textos, pero los caracteres se ocultan</li>
+        </ul>
+        <label for="password">Password</label>
+        <input type="password" name="password">
+
+        <p>Tipo "email"</p>
+        <ul>
+            <li>Acepta y valida una direccion de correo</li>
+        </ul>
+        <label for="email">Email</label>
+        <input type="email" name="email">
+
+
+        <p>Tipo "number"</p>
+        <ul>
+            <li>Acepta numeros y atributos como min, max, step</li>
+        </ul>
+        <label for="number">Number</label>
+        <input type="number" name="age" min="0" max="30" step="1">
+        <input type="number" name="age" min="0" max="12" step="1">
+        <input type="number" name="age" min="1999" max="2050" step="1">
+
+
+        <p>Tipo "date"</p>
+        <ul>
+            <li>Proporciona un selector de fechas</li>
+        </ul>
+        <label for="date">Date</label>
+        <input type="date" name="date">
+
+        <p>Tipo "checkbox"</p>
+        <ul>
+            <li>Proporciona un selector de todos</li>
+        </ul>
+        <label for="checkbox">Deportes</label>
+        <input type="checkbox" name="interest" value="Deportes">
+        <label for="checkbox">Musica</label>
+        <input type="checkbox" name="interest" value="Musica">
+
+        <p>Tipo "file"</p>
+        <ul>
+            <li>Permite cargar un archivo</li>
+        </ul>
+        <label for="submit">Cargar archivo</label>
+        <input type="file" value="enviar">
+
+        <p>Tipo "reset"</p>
+        <ul>
+            <li>Boton de reinicio que restaura todos los valores</li>
+        </ul>
+        <label for="reset">Restablecer</label>
+        <input type="reset" value="reset">
+
+        <p>Tipo "hidden"</p>
+        <ul>
+            <li>Crea un campo oculto que no es visible para el usuario</li>
+        </ul>
+        <label for="hidden">hidden buttom</label>
+        <input type="hidden" value="hidden">
+
+        <p>Tipo "submit"</p>
+        <ul>
+            <li>Permite enviar el formulario</li>
+        </ul>
+        <label for="submit">Enviar formulario</label>
+        <input type="submit" value="submit">
+
+        
+        <input type="submit" value="enviar">
+    </form>
+<pre>
+    <footer>Derechos reservados</footer>
+</pre>
+</body>
+</html>
