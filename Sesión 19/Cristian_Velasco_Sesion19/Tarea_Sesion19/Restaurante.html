@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+<title>Pedido Restaurante</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+        }
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="text"],
+        input[type="number"],
+        select {
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #00ff22;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<h1>Realizar Pedido en Línea</h1>
+<form action="/procesar_pedido" method="post">
+        <label for="nombre">Nombre:</label>  
+        <input type="text" id="nombre" name="nombre" required>
+        <label for="direccion">Dirección de Envío:</label>
+        <input type="text" id="direccion" name="direccion" required>
+        <label for="telefono">Teléfono de Contacto:</label>
+        <input type="text" id="telefono" name="telefono" required>
+        <label for="plato">Plato Principal:</label>
+        <select id="plato" name="plato" required>
+            <option value="op 1">Pizza</option>
+            <option value="op 2">Hamburguesa</option>
+            <option value="op 3">Pollo</option>
+            <option value="op 3">Carne</option>
+        </select>
+<label for="cantidad">Cantidad:</label>
+<input type="number" id="cantidad" name="cantidad" min="1" max="10" step="1">
+<input type="submit" value="Realizar Pedido">
+    
+   
+</body>
+</html>

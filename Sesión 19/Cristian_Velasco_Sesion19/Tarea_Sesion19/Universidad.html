@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ingreso Universidad</title>
+    <style>
+        body{
+          font-weight: bolder;
+          font-family: Arial, sans-serif;
+          background-image: url('https://static.vecteezy.com/system/resources/previews/011/171/111/non_2x/white-background-with-orange-geometric-free-vector.jpg');
+              background-size: cover;
+              background-position: center;
+              margin: 0;
+              padding: 0;
+        }
+        .nuevoingreso {
+              width: 350px;
+              margin: 0 auto;
+              background-color: rgba(255, 255, 255, 0.5); /* Fondo con transparencia del 50% */
+              padding: 30px;
+              border-radius: 10px;
+              box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+          }
+          
+        .nuevoingreso label,
+        .nuevoingreso input {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .nuevoingreso input[type="text"],
+        .nuevoingreso input[type="email"],
+        .nuevoingreso input[type="date"],
+        .nuevoingreso input[type="number"]
+        {
+            width: 90%;
+            padding: 10px;
+            border: 2px solid #ccc;
+            border-radius: 2px;
+        }
+          .nuevoingreso h2 {
+              text-align: center;
+          }
+          .nuevoingreso button {
+            width: 100%;
+            padding: 10px;
+            background-color: #ffbb00;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="nuevoingreso">
+        <h2>Registro de nuevo ingreso</h2>
+    <form action="/registro-n" method="post"></form>
+    <label for="nuevo">Nombre del aspirante:</label>
+    <input type="text" name="nuevo" id="nuevo">
+    <label for="email">Ingrese su correo electronico:</label>
+    <input type="email" name="email" id="email">
+    <label for="nacimiento">Ingrese su fecha de nacimiento:</label>
+    <input type="date" name="nacimiento" id="nacimiento">
+    <label for="seleccion">Carrera a cursar:</label>
+    <select name="seleccion" id="seleccion">
+        <option value="op 1">Ingenieria en sistemas</option>
+        <option value="op 2">Ingenieria civil</option>
+        <option value="op 3">Ingenieria industrial</option>
+        <option value="op 3">Tecnico en software</option>
+        <option value="op 3">Tecnico en diseño grafico</option>
+        <option value="op 3">Licenciatura en idiomas</option>
+        <option value="op 3">Licenciatura en telecomunicaciones</option>
+        </select><br><br>
+        <label for="submit">Cargar titulo de bachiller:</label>
+        <input type="file" value="Enviar">
+        <label for="comentario">Por que te gustaria estudiar la carrera que elijio:</label>
+        <textarea name="comentario" id="comentario" cols="40" rows=04"></textarea><br><br>
+        <button type="submit"><strong>Enviar registro</strong></button>
+</body>
+</html>

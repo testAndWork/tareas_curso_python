@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro Hotel</title>
+    <style>
+      body{
+        font-weight: bolder;
+        font-family: Arial, sans-serif;
+        background-image: url('https://www.boatjump.com/blog/wp-content/uploads/2023/02/hotel.jpg');
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+      }
+      .reghotel {
+            width: 400px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.5); /* Fondo con transparencia del 50% */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+        }
+
+        .reghotel h2 {
+            text-align: center;
+        }
+
+        .reghotel label,
+        .reghotel input {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .reghotel input[type="text"],
+        .reghotel input[type="email"],
+        .reghotel input[type="date"],
+        .reghotel input[type="number"]
+        {
+            width: 90%;
+            padding: 10px;
+            border: 2px solid #ccc;
+            border-radius: 2px;
+        }
+
+        .reghotel button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .reghotel button:hover {
+            background-color: #194b85;
+        }
+    
+
+    </style>
+</head>
+<body>
+    <div class="reghotel">
+        <h2>Registro Hotel</h2>
+    <form action="/registro-h" method="post"></form>
+    <label for="huesped">Nombre huesped:</label>
+    <input type="text" name="huesped" id="huesped">
+    <label for="email">Ingrese su correo electronico:</label>
+    <input type="email" name="email" id="email">
+    <label for="fechaentrada">Seleccione fecha de entrada:</label>
+    <input type="date" name="fechaentrada" id="fechaentrada">
+    <label for="fechasalida">Seleccione fecha de salida:</label>
+    <input type="date" name="fechasalida" id="fechasalida">
+    <label for="seleccion">Seleccione una opcion:</label>
+    <select name="seleccion" id="seleccion">
+        <option value="op 1">Individual</option>
+        <option value="op 2">Doble</option>
+        <option value="op 3">Suit</option>
+        </select><br><br>
+    <label for="numero">Seleccione el numero de habitacion:</label>
+    <input type="number" name="age" min="1" max="200" step="1">
+    <label for="seleccion1">Seleccione un tiempo de comida:</label>
+    <label>Desayuno <input type="checkbox" name="opcion" value="opcion1"></label>
+    <label>Almuerzo <input type="checkbox" name="opcion" value="opcion1"></label>
+    <label>Cena <input type="checkbox" name="opcion" value="opcion1"></label>
+    <label for="comentario">Deja tu valoracion ☆☆☆☆☆ :</label>
+    <textarea name="comentario" id="comentario" cols="25" rows=05"></textarea><br><br>
+    <button type="submit"><strong>Enviar registro</strong></button>
+    </div>
+</body>
+</html>
