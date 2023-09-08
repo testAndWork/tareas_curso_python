@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Restaurante Don Luis</title>
+
+    </head>
+<body style="background-color: cornflowerblue;">
+    <section><h2>Bienvenido Nuestro Restaurante</h2></section>
+    <form action="/procesar_restaurante" method="post">
+        <label for="nombre">Nombre Completo:</label>
+        <input type="text" name="nombre" id="nombre"><br><br>
+        <label for="cel">Numero Telofonico:</label>
+        <input type="tel" name="cel" id="cel"><br><br>
+        <label for="servicio">Elija su combo:</label><br>
+        <input type="radio" id="combo1" name="servicio" value="combo1">
+        <label for="servicio">Combo1</label><br>
+        <img src="/Sesion19_LuisCampos/comobo1.jpg" width="80" height="80" alt="combo1"><br>
+        <input type="radio" id="combo2" name="servicio" value="combo2">
+        <label for="servicio">Combo2</label><br>
+        <img src="/Sesion19_LuisCampos/pizza.avif" width="80" height="80" alt="combo2"><br>
+        <input type="radio" id="combo3" name="servicio" value="combo3">
+        <label for="servicio">Combo3</label><br><br>
+        <img src="/Sesion19_LuisCampos/pollo.jpg" width="80" height="80" alt="combo3"><br><br>
+        <label for="direccion">Direccion</label>
+        <input type="text" name="direccion" id="direccion"><br><br>
+        <label for="hora">Hora de entrega:</label>
+        <input type="time" name="hora" id="hora"><br><br>
+        <input type="submit" value="Comprar"><br><br>
+
+    </form>
+    <form method="get" action="http://127.0.0.1:5500/Sesion19_LuisCampos/Index.html">
+        <input type="submit" value="Principal">
+
+    </form>
+    <pre>
+
+
+
+
+
+
+    </pre>
+
+
+</body>
+</html>

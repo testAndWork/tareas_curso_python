@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Hotel San Francisco</title>
+
+    </head>
+<body style="background-image: url('/Sesion19_LuisCampos/web-agencias-estandar.jpg'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
+    <section><h2>Formulario Para Reservar Habitacion</h2></section>
+    <form action="/procesar_registro" method="post">
+        <label for="nombre">Nombre Completo:</label>
+        <input type="text" name="nombre" id="nombre"><br><br>
+        <label for="number">Numero Telofonico:</label>
+        <input type="number" name="cel" id="number"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="llegada">Fecha de Llegada:</label>
+        <input type="date" id="llegada" name="llegada"><br><br>
+        <label for="salida">Fecha de Llegada:</label>
+        <input type="date" id="salida" name="salida"><br><br>
+        <label for="habitacion">Tipo de Habitacion:</label><br>
+        <input type="radio" id="individual" name="habitacion" value="individual">
+        <label for="individual">Individual</label><br>
+        <input type="radio" id="doble" name="habitacion" value="doble">
+        <label for="habitacion">Doble</label><br>
+        <input type="radio" id="suit" name="habitacion" value="suit">
+        <label for="habitacion">Suit</label><br>
+        <label for="nhabitacion">Numero Habitacion:</label>
+        <input type="radio" id="A23" name="nhabitacion" value="A23">
+        <label for="nhabitacion">A23</label>
+        <input type="radio" id="E12" name="nhabitacion" value="E12">
+        <label for="nhabitacion">E12</label>
+        <input type="radio" id="J24" name="nhabitacion" value="J24">
+        <label for="nhabitacion">J24</label><br><br>
+        <label for="servicio">Servicio a la Habitacion:</label>
+        <input type="radio" id="si" name="servicio" value="si">
+        <label for="servicio">Si</label>
+        <input type="radio" id="no" name="servicio" value="no">
+        <label for="servicio">No</label><br><br>
+        <label for="desayuno">Desayuno:</label>
+        <input type="checkbox" name="interest" value="Desayuno">
+        <label for="almuerzo">Almuerzo:</label>
+        <input type="checkbox" name="interest" value="Almuerzo">
+        <label for="cena">Cena:</label>
+        <input type="checkbox" name="interest" value="Cena"><br><br>
+        <label for="comentario">Comentario:</label>
+        <textarea name="comentario" id="comentario" cols="20" rows="12"></textarea><br><br>
+        <input type="submit" value="Registrar"><br><br>
+
+    </form>
+    <form method="get" action="http://127.0.0.1:5500/Sesion19_LuisCampos/Index.html">
+        <input type="submit" value="Principal">
+
+    </form>
+
+
+    <pre>
+
+
+
+
+
+
+    </pre>
+
+
+</body>
+</html>
