@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+</head>
+<body style="background-color:grey">
+    <section ><h2 style="color: blueviolet;">Pedido de Restaurante</h2></section>
+
+    <form action="/procesar-restaurante" method="post">
+        <label for="restaurante">Restaurante a elegir: </label>
+        <input type="text" name="restaurante" id="restaurante"><br><br>
+
+        <label for="comida">Comida a elegir: </label>
+        <label>Pizza<input type="radio" name="comida" id="comida"></label><br>
+        <label>Pollo<input type="radio" name="comida" id="comida"></label><br>
+        <label>Carne Asada<input type="radio" name="comida" id="comida"></label><br>
+        <label>Ensalada Premium<input type="radio" name="comida" id="comida"></label><br>
+        <label>Pollo empanizado<input type="radio" name="comida" id="comida"></label><br><br>
+
+        <label for="pedido">Opcion de Pedido: </label><br>
+        <label>Para comen en restaurante<input type="radio" name="pedido" id="pedido"></label><br>
+        <label>Para llevar a Domicilio<input type="radio" name="pedido" id="pedido"></label><br><br>
+
+        <label for="fechaentrega">Fecha de Entrega: </label>
+        <input type="date" name="fechaentrega" id="fechaentrega"><br><br>
+
+        <label for="horaentrega">Hora de Entrega: </label>
+        <input type="time" name="horaentrega" id="horaentrega"><br><br>
+
+        <label for="nombre">Nombre de la persona que esta pidiendo: </label>
+        <input type="text" name="nombre" id="nombre"><br><br>
+
+        <label for="pagartotal">Pagar a Total: </label>
+        <input type="number" name="pagartotal" id="pagartotal"><br><br>
+
+        <label for="direccion">Dirección: </label>
+        <input type="text" name="direccion" id="direccion"><br><br>
+
+        <label for="telefono">Telefono: </label>
+        <input type="tel" name="telefono" id="telefono"><br><br>
+
+        <label for="comentario">Comentarios: </label><br>
+        <textarea name="comentario" id="comentario" cols="60" rows="12"></textarea><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+    <form method="get" action="http://127.0.0.1:5500/Tarea_SamuelBonilla/index.html">
+        <input type="submit" value="Principal">
+</body>
+</html>

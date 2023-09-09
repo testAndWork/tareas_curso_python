@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+</head>
+<body style="background-color: darkseagreen;">
+    <section ><h2 style="color: blueviolet;">Reserva de Hotel</h2></section>
+
+    <form action="procesar-hotel" method="post">
+        <label for="nombre">Nombre del huesped: </label>
+        <input type="text" name="nombre" id="nombre"><br><br>
+
+        <label for="telefono">Telefono del Huesped: </label>
+        <input type="text" name="telefono" id="telefono"><br><br>
+
+        <label for="email">Email del Huesped: </label>
+        <input type="email" name="email" id="email"><br><br>
+
+        <label for="fechallegada">Fecha de Llegada: </label>
+        <input type="date" name="fechallegada" id="fechallegada"><br><br>
+
+        <label for="fechasalida">Fecha de Salida: </label>
+        <input type="date" name="fechasalida" id="fechasalida"><br><br>
+
+        <label for="habitacion">Tipo de Habitación</label><br><br>
+        <label>Habitación Individual<input type="radio" name="habitacion" id="habitacion"></label><br>
+        <label>Habitación Doble<input type="radio" name="habitacion" id="habitacion"></label><br>
+        <label>Habitación Suit<input type="radio" name="habitacion" id="habitacion"></label><br><br>
+
+        <label for="numerohabitacion">Numero de Habitación</label>
+        <input type="number" name="numerohabitacion" id="numerohabitacion"><br><br>
+
+        <label for="serviciocuarto">Servicio al Cuarto</label>
+        <input type="text" name="serviciocuarto" id="serviciocuarto"><br><br>
+
+        <label for="quedesea">¿Que desea para la habitación?</label><br><br>
+        <label for="quedesea">Desayuno</label>
+        <input type="checkbox" name="quedesea" value="Desayuno">
+        <label for="quedesea">Almuerzo</label>
+        <input type="checkbox" name="quedesea" value="Almuerzo">
+        <label for="quedesea">Cena</label>
+        <input type="checkbox" name="quedesea" value="Cena"><br><br>
+
+        <label for="comentario">Comentarios: </label><br>
+        <textarea name="comentario" id="comentario" cols="60" rows="12"></textarea><br><br>
+
+        <input type="submit" value="Enviar">
+
+    </form>
+    <form method="get" action="http://127.0.0.1:5500/Tarea_SamuelBonilla/index.html">
+        <input type="submit" value="Principal">
+</body>
+</html>
