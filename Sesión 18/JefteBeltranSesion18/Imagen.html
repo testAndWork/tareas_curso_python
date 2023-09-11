@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagen Adaptable</title>
+</head>
+<body>
+    <h1>Imagen Adaptable</h1>
+    <p>Esta es una imagen adaptable:</p>
+
+    <!-- Utiliza atributos width y height con unidades relativas -->
+    <img src="mario.jpg" alt="Mi Imagen" width="100%" height="auto">
+
+    <!-- Utiliza el atributo srcset para proporcionar diferentes versiones de la imagen -->
+    <img srcset="imagen-320w.jpg 320w,
+                 imagen-480w.jpg 480w,
+                 imagen-800w.jpg 800w"
+         sizes="(max-width: 320px) 280px,
+                (max-width: 480px) 440px,
+                800px"
+         src="imagen.jpg"
+         alt="Mi Imagen Adaptable">
+</body>
+</html>
