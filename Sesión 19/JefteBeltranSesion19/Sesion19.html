@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Etiqueta FORM</title>
+</head>
+<body>
+
+    <section><h3 style="color: brown;">Uso de la etiqueta < textarea ></h3></section>
+    <p>Esta etiqueta se utliliza para recopilar el texto largo, como comentartios o descripciones</p>
+    
+   
+    <form action="/procesar-formulario" method="post">
+        <label for="comentario">comentario:</label>
+        <textarea name="comentario" id="comentario" cols="20" rows="12"></textarea><br><br>
+    
+    <label for="selection">Selecciona una opción: </label>
+    <select name="selection" id="selection">
+        <option value="op1">Opcion 1</option>
+        <option value="op2">Opcion 2</option>
+        <option value="op3">Opcion 3</option>
+        <option value="op4">Opcion 4</option>
+        </select>
+    
+
+    <section><h3 style="color: brown;">Etiqueta Radio</h3></section>
+    <label >Opcion 1: <input type="radio" name="opcion" value="opcion1"></label><br><br>
+    <label >Opcion 2: <input type="radio" name="opcion" value="opcion2"></label><br><br>
+    <label >Opcion 3: <input type="radio" name="opcion" value="opcion3"></label><br><br>
+    
+
+    section><h3 style="color: brown;">Etiqueta check box</h3></section>
+    <label >Opcion 1: <input type="checkbox" name="opcion" value="opcion1"></label><br><br>
+    <label >Opcion 2: <input type="checkbox" name="opcion" value="opcion2"></label><br><br>
+    <label >Opcion 3: <input type="checkbox" name="opcion" value="opcion3"></label><br><br>
+    
+    </form>
+
+</body>
+
+</html>

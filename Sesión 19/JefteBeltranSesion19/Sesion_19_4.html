@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Get</title>
+</head>
+<body>
+    
+    <section><h2>Metodo POST y Get para envio de datos</h2></section>
+    <h3>Get</h3>
+    <u>
+        <li>Se utiliza para solicitar datos del servidor</li>
+        <li>Los datos del formulario se agreguen a la URL como parametros de conusulta</li>
+        <li>Es visible en la barra de direcciones del navegador</li>
+        <li>Es adecuado para solicitudes que no cambien el estado del servidor(consulta a baase datos y busqueda</li>
+        <li>Los datos tienen una longitud limitada por las restricciones de longitud de la Url</li>
+    </u>
+    <form action="/buscar" method="get">
+        <input type="text" name="buscar" placeholder="Buscar ...">
+        <input type="submit" name="busqueda" id="buscar " value="Buscar">
+
+    </form>
+
+
+
+    <h3>Post</h3>
+    <u>
+        <li>Envia datos del servidor para procesarlos</li>
+        <li>Los datos del formulario no son visibles </li>
+        <li>Es adecudado para enviar datos confidenciales y ademas puede ser mas extensos</li>
+        <li>No se utiliza para solicitudes que cambien el estado del servidor de ser asi se debe usar con precaucion</li>
+        <li>No tiene restricccion de longitud como el metodo Get</li>
+    </u>
+    <form action="/registrar" method="post">
+        <label for="nombre">Nombre: </label>
+        <input type="nombre" id = "nombre" name="nombre" placeholder="Su nombre aca..."><br><br>
+
+        
+
+        <label for="email">Email: </label>
+        <input type="email" id = "email" name="email" placeholder="Su email aca..."><br><br>
+
+
+        <input type="submit" name="registrar" id="registrar" value="Registrar">
+    </form>
+    
+</body>
+
+</html>

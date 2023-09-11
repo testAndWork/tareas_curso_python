@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora Básica</title>
+</head>
+<body style="background-image: url(imagen.jpg); background-size: cover; background-repeat: no-repeat; margin: 0;">
+    <header style="width: 100%; height: 50px; margin: 0; padding: 0;">
+        <nav style="background-color: rgb(15, 15, 15); color: antiquewhite; font-size: 20px; height: 40px; text-decoration: none;">
+            <ul style="display: flex; list-style: none; margin: 0; text-decoration: none;">
+                <li><a href="#" style="margin: 0 10px; text-decoration: none; color: antiquewhite; ">Inicio</a></li>
+                <li><a href="#" style="margin: 0 10px; text-decoration: none; color: antiquewhite;">Matematicas</a></li>
+                <li><a href="#" style="margin: 0 10px; text-decoration: none; color: antiquewhite;">Nosotros</a></li>
+                <li><a href="#" style="margin: 0 10px; text-decoration: none; color: antiquewhite;"> Contactos</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <center>
+    <div style="width: 70%; height: 635px; background-color: rgb(255, 0, 0, 0); margin: 0;">
+        <center>
+        <div style="width: 35%; height: 360px; background-color: rgba(44, 15, 15, 0.8);">    
+            <h1 style="color: antiquewhite;">Calculadora Básica</h1>
+            <form style="color: antiquewhite;">
+                <label for="numero1">Número 1:</label>
+                <input type="number" id="numero1" required><br><br>
+                
+                <label for="numero2">Número 2:</label>
+                <input type="number" id="numero2" required><br><br>
+
+                <label for="operacion">Operación:</label>
+                <select id="operacion">
+                    <option value="suma">Suma</option>
+                    <option value="resta">Resta</option>
+                    <option value="multiplicacion">Multiplicación</option>
+                    <option value="division">División</option>
+                </select><br><br>
+
+                 <input type="button" value="Calcular" onclick="calcularResultado()">
+            </form>
+
+    <h2 style="color: antiquewhite;">Resultado: <span id="resultado"></span></h2>
+
+    <script>
+        function calcularResultado() {
+            var numero1 = parseFloat(document.getElementById("numero1").value);
+            var numero2 = parseFloat(document.getElementById("numero2").value);
+            var operacion = document.getElementById("operacion").value;
+            var resultado = 0;
+
+            switch (operacion) {
+                case "suma":
+                    resultado = numero1 + numero2;
+                    break;
+                case "resta":
+                    resultado = numero1 - numero2;
+                    break;
+                case "multiplicacion":
+                    resultado = numero1 * numero2;
+                    break;
+                case "division":
+                    if (numero2 !== 0) {
+                        resultado = numero1 / numero2;
+                    } else {
+                        alert("Error: No se puede dividir por cero.");
+                        return;
+                    }
+                    break;
+                default:
+                    alert("Operación no válida.");
+                    return;
+            }
+
+            document.getElementById("resultado").textContent = resultado;
+        }
+    </script>
+    </div>
+</center>
+</div>
+</center>
+</main>
+    <footer style="width: 100%; height: 50px; background-color: rgb(40, 46, 46); text-align: center; margin: 0; padding: 0;">
+        <p style="color: antiquewhite; font-size: 20px;">Derechos reservados &copy;</p>
+    </footer>
+
+</body>
+</html>
+

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de registro</title>
+</head>
+<body>
+    <section><h2>Formulario de registro de Personas</h2></section>
+
+    <form action="/procesa-registro" method="post">
+
+        <label for="nombre" >Nombre: </label>
+        <input type="text" name="nombre" id="nombre"><br><br>
+
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email"><br><br>
+
+        <label for="password">Contraseña:</label>
+        <input type="password" name="password" id="password"><br><br>
+
+
+        <label for="nacimiento">Fecha de nacimiento</label>
+        <input type="date" id="nacimiento" name="nacimiento"><br><br>
+
+        <label for="genero">Genero: </label><br>
+        <input type="radio" name="genero" id="masculino" value="masculino">
+        <label for="genero">Masculino</label><br>
+
+        <input type="radio" name="femenino" id="femenino" value="femenino">
+        <label for="genero">Femenino</label><br><br>
+
+        <input type="submit" value="Registrar">
+
+    </form>
+
+    <pre>
+
+    </pre>
+</body>
+</html>
