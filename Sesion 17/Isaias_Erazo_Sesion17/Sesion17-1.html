@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+    <head>
+    <title>Tablas</title>
+    </head>
+
+    <body>
+        <section><h1>Usando Tablas en HTML</h1></section>
+
+        <table>
+            <!--Sobre este se construye todo lo referente a la tabla-->
+            <tr>
+                <!--Define una fila en la celda-->
+                <td> Celda 1</td>
+                <td> Celda 2</td>
+                <td> Celda 3</td>
+            </tr>
+            <tr>
+                <td> Celda 4</td>
+                <td> Celda 5</td>
+                <td> Celda 6</td>
+            </tr>
+        </table>
+
+        <section><h2>Tabla con encabezado</h2></section>
+<!------------------------------------------------------------------------>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th><th>Codigo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Nombre Asignado</td>
+                    <td> 24523156</td>
+                </tr>
+                <tr>
+                    <td>Nombre 1</td>
+                    <td>A1233657</td>
+                </tr>
+            </tbody>
+        </table>
+<!-------------------------------------------------------------------------------->
+        <section><h2>Tabla con Caption</h2></section>
+            <table>
+            <caption style="color: blueviolet;"> Este es el Caption de la tabla</caption>
+                <thead>
+                    <tr>
+                        <th>Nombre</th><th>Codigo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Nombre Asignado</td>
+                        <td> 24523156</td>
+                    </tr>
+                    <tr>
+                        <td>Nombre 1</td>
+                        <td>A1233657</td>
+                    </tr>
+                </tbody>
+            <caption style="color: blueviolet;"> Este es el Caption de la tabla</caption>
+            </table>
+<!--------------------------------------------------------------------------------->
+        <section><h2 style="color: chocolate;">Tablas con grupos de columnas</h2></section>
+
+        <table>
+            <!--Agregando color a las columnas-->
+            <colgroup>
+                <col style="background-color: darkslateblue;">
+                <col style="background-color:mediumaquamarine">
+            </colgroup>
+            <caption style="color: blueviolet;"> Este es el Caption de la tabla</caption>
+                <thead>
+                    <tr>
+                        <th>Nombre</th><th>Codigo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Nombre Asignado</td>
+                        <td> 24523156</td>
+                    </tr>
+                    <tr>
+                        <td>Nombre 1</td>
+                        <td>A1233657</td>
+                    </tr>
+                </tbody>
+        </table>
+<!--------------------------------------------------------------------------------->
+        <section><h2 style="color: chocolate;">Tablas con grupos de columnas</h2></section>
+
+        <table>
+            <!--Agregando color a las columnas-->
+            <colgroup>
+                <col style="background-color: darkslateblue;">
+                <col style="background-color:mediumaquamarine">
+            </colgroup>
+            <caption style="color: blueviolet;"> Este es el Caption de la tabla</caption>
+                <thead>
+                    <tr>
+                        <th>Nombre</th><th>Codigo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Nombre Asignado</td>
+                        <td> 24523156</td>
+                    </tr>
+                    <tr>
+                        <td>Nombre 1</td>
+                        <td>A1233657</td>
+                    </tr>
+                </tbody>
+        </table>
+<!--------------------------------------------------------------------------------->
+
+        <section><h2 style="color: chocolate;">Uso de nuevos Atributos</h2></section>
+
+        <table>
+            <caption style="color: blueviolet;"> Atributos Scope and Header </caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Nombre</th><th scope="col">Codigo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Nombre Asignado</td>
+                        <td> 24523156</td>
+                    </tr>
+                    <tr>
+                        <td>Nombre 1</td>
+                        <td>A1233657</td>
+                    </tr>
+                </tbody>
+        </table>
+        
+<!--------------------------------------------------------------------------------->
+        <section><h2 style="color: chocolate;">Tabla con Colspan </h2></section>
+
+        <table>
+            <caption style="color: blueviolet;"> Uso de nuevos Atributos</caption>
+                
+                <tr>
+                    <th colspan="2">Nombre</th>
+                    <th> Info Contacto</th>
+                    <th> Este es el 3</th>
+                </tr>
+                <tr>
+                    <td>Nombre 1</td>
+                    <td>Espacio 1</td>
+                    <td>A2342</td>
+                    <td>121334</td>
+                </tr>                
+        </table>
+<!--------------------------------------------------------------------------------->
+        <section><h2>Rowspan para las tablas</h2></section>
+        <table>
+            <tr>
+                <th>Nombre</th>
+                <th>Informacion de contacto</th>
+            </tr>
+            <tr>
+                <td rowspan="2"> John Doe</td>
+                <td>Email: yonyon@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Celular:79876543</td>
+            </tr>
+        </table>
+    </body>
+</html>
