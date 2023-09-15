@@ -1,0 +1,40 @@
+header{
+    width: 710px;
+    height: 180px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 240px;
+}
+
+.contenedor {
+    display: flex;
+}
+
+.contenedor article {
+    width: 70%; 
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.contenedor h3{
+    color: #094d71;
+    font-family: 'Times New Roman', Times, serif
+}
+
+.contenedor h4{
+    color: #094d71;
+    font-family: 'Times New Roman', Times, serif
+}
+
+.texto {
+    font-family: 'Times New Roman', Times, serif;
+    color: #094d71;
+}
+
+h2{
+    color: #094d71;
+    font-family: 'Times New Roman', Times, serif;
+}

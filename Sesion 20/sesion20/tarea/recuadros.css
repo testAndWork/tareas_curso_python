@@ -1,0 +1,16 @@
+.caja-principal {
+    width: 80%;
+    height: 200px;
+    border: 1px solid #ccc;
+  }
+  
+  .cajas-secundarias {
+    display: flex;
+  }
+  
+  .cajas-secundarias input {
+    width: 30%; 
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
