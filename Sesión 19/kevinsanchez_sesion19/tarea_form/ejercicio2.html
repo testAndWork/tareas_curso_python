@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+</head>
+<body>
+    <section><h2>Pedido en Linea</h2></section>
+
+    <form action="/pedir-comida" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre"> <br><br>
+
+        <label for="telefono">Telefono:</label>
+        <input type="text" name="telefono" id="telefono"> <br><br>
+
+        <label for="direccion">Direccion:</label>
+        <textarea name="direccion" id="direccion" cols="30" rows="5"></textarea> <br><br>
+
+        <label for="plato">Combos:</label> <br>
+        <select name="plato" id="plato">
+            <optgroup label="Platos">
+                <option value="combo1">12 piezas de pollo con 4 papas</option>
+                <option value="combo2">Pizza 4 estaciones</option>
+                <option value="combo3">6 piezas + 3 ensaladas + 3 panes</option>
+                <option value="combo4">Hambrguesa + papa fritas + soda</option>
+            </optgroup>
+        </select>
+
+        <input type="number" name="count" id="count">
+        <br>
+        <br>
+
+        <select name="soda" id="soda">
+            <optgroup label="Bebidas">
+                <option value="soda1">Coca cola en lata</option>
+                <option value="soda2">Pepsi de 1.5l</option>
+                <option value="soda3">Coca cola 1.25l</option>
+                <option value="soda4">Fresco de orchata</option>
+            </optgroup>
+        </select>
+
+        <input type="number" name="count" id="count">
+        <br>
+        <br>
+
+        <select name="postre" id="postre">
+            <optgroup label="Postres">
+                <option value="postre1">Tarta de manzana</option>
+                <option value="postre2">Flan</option>
+                <option value="postre3">3 leches</option>
+                <option value="postre4">Gelatina</option>
+            </optgroup>
+        </select>
+
+        <input type="number" name="count" id="count">
+        <br><br>
+
+        <input type="submit" value="Enviar Pedido">
+
+    </form>
+</body>
+</html>
+
+<!--
+
+
+
+
+            
+
+-->

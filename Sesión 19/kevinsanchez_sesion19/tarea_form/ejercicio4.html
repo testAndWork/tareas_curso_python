@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4</title>
+    <script>
+        function calc(){
+            var numero1 = parseFloat(document.getElementById("num1").value);
+            var numero2 = parseFloat(document.getElementById("num2").value);
+            var op = document.getElementById("operacion").value;
+            var result = 0;
+
+            switch(op){
+                case "suma":
+                    result = numero1 + numero2;
+                    break;
+                case "resta":
+                    result = numero1 - numero2;
+                    break;
+                case "multiplicacion":
+                    result = numero1 * numero2;
+                    break;
+                case "division":
+                    if(numero1 && numero2 != 0){
+                        result = numero1 / numero2;
+                    }else{
+                        alert('No se puede dividir por cero.')
+                    }
+                    
+                    break;
+            }
+            document.getElementById("result").innerHTML = "Resultado: " + result;
+        }
+
+    </script>
+</head>
+<body>
+    <section><h2>Calculadora</h2></section>
+    <form>
+        <label for="num1">Numero 1:</label>
+        <input type="number" name="num1" id="num1"> <br><br>
+
+        <label for="num2">Numero 2:</label>
+        <input type="number" name="num2" id="num2"> <br><br>
+
+        <label for="operacion">Seleccione la operacion:</label>
+        <select name="operacion" id="operacion">
+                <option value="suma">Suma</option>
+                <option value="resta">Resta</option>
+                <option value="multiplicacion">Multiplicacion</option>
+                <option value="division">Division</option>
+        </select>
+        <br><br>
+
+        <input type="button" value="Enviar" onclick="calc()">
+        
+    </form>
+
+    <div id="result"></div> 
+</body>
+</html>

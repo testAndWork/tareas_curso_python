@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etiqueta INPUT</title>
+</head>
+<body>
+    <section><h2>Etiquetas < input > y sus variantes </h2></section>
+
+    <p>Tipo "text"</p>
+    <ul>
+        <li>Crea el campo de texto en una linea</li>
+        <li>Acepta cualquier tipo de texto alfanumerico</li>
+    </ul>
+
+        <label for="username">UserName</label>
+        <input type="text" name="username" id="username">
+
+        <p>Tipo "password"</p>
+        <ul>
+            <li>Como el campo de texto, pero los caracteres se ocultan</li>
+        </ul>
+    
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password">
+    
+            <p>Tipo "email"</p>
+            <ul>
+                <li>Acepta y valida una direccion de correo</li>
+            </ul>
+        
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+    
+            <p>Tipo "number"</p>
+            <ul>
+                <li>Solo acepta numeros y puede incluir atributos como min,max,step</li>
+            </ul>
+            
+                <label for="number">Number</label>
+                <input type="number" name="age" min="0" max="20" step="1">
+                <input type="number" name="age" min="5" max="120" step="3">
+                <input type="number" name="age" min="5" max="120" step="3">
+                <input type="submit" value="Enviar">
+    
+            <p>Tipo "date"</p>
+            <ul>
+                <li>Proporciona un selector de fecha</li>
+            </ul>
+                
+                <label for="date">Date</label>
+                <input type="date" name="date">
+                <input type="submit" value="Enviar">
+            
+            <p>Tipo "checkbox"</p>
+            <ul>
+                <li>Crea una casilla de verificacion que permite al usuario seleccionar una o varias opciones</li>
+            </ul>
+                    
+                    <label for="checkbox">Deportes</label>
+                    <input type="checkbox" name="interest" value="Deportes">
+                    <label for="checkbox">Musica</label>
+                    <input type="checkbox" name="interest" value="Music">
+                    <input type="submit" value="Enviar">
+    
+    
+                    <p>Tipo "radio"</p>
+                    <ul>
+                        <li>Crea una casilla de verificacion que permite al usuario seleccionar una opcion.</li>
+                    </ul>
+                            
+                            <label for="radio">Deportes</label>
+                            <input type="radio" name="interest" value="Deportes">
+                            <label for="radio">Musica</label>
+                            <input type="radio" name="interest" value="Music">
+                            <label for="radio">viajes</label>
+                            <input type="radio" name="interest" value="Viajes">
+                            <label for="radio">Lectura</label>
+                            <input type="radio" name="interest" value="Lectura">
+                            <input type="submit" value="Enviar">
+    
+                    <p>Tipo "file"</p>
+                    <ul>
+                        <li>Permite cargar un archivo.</li>
+                    </ul>
+                                    
+                        <label for="submit">Cargar Archivo</label>
+                        <input type="file" value="archivo">
+
+                    <p>Tipo "submit"</p>
+                    <ul>
+                        <li>Permite enviar formulario.</li>
+                    </ul>
+                                    
+                        <label for="submit">Cargar Archivo</label>
+                        <input type="submit" value="enviar">
+
+    
+                        <p>Tipo "reset"</p>
+                        <ul>
+                            <li>Boton de reinicio que restaura los valores a los valores predeterminados.</li>
+                        </ul>
+                                        
+                            <label for="reset">Restablecer</label>
+                            <input type="reset" value="reset">
+
+                        <p>Tipo "hidden"</p>
+                        <ul>
+                            <li>Boton de reinicio que restaura los valores a los valores predeterminados.</li>
+                        </ul>
+                                        
+                            <label for="hidden">hidden Buttom</label>
+                            <input type="hidden" value="hidden">
+    <pre></pre>
+    <footer>Derechos reservados.</footer>
+</body>
+</html>
