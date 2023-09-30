@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejemplo de Uso de API con Bootstrap y CSS</title>
+  <!-- Enlace a los archivos CSS de Bootstrap -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Enlace a tu archivo de estilos CSS personalizado -->
+  <link rel="stylesheet" href="/test.css">
+</head>
+<body>
+
+<!-- Menú de navegación Bootstrap -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">Mi Sitio</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Películas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Series</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Barra lateral -->
+      <nav id="sidebar" class="col-md-3 col-lg-2 bg-dark text-white">
+        <div class="position-sticky">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <h4 class="nav-link">Información</h4>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Acerca de</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Equipo</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+  
+      <!-- Contenido principal -->
+      <main class="col-md-9 ms-sm-auto col-lg-10 px-4">
+<div class="container mt-5">
+  <h1 class="text-center">Listado de Películas</h1>
+  <div id="movies-list" class="row justify-content-center"></div>
+</div>
+
+<!-- Enlace a los archivos JavaScript de Bootstrap y jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+  // Función para obtener y mostrar las películas desde la API
+  function getMovies() {
+    fetch('https://api.themoviedb.org/3/discover/movie?api_key=b2b43b3b81c1505569870fc912cae15c')
+      .then(response => response.json())
+      .then(data => {
+        const moviesList = document.getElementById('movies-list');
+        data.results.forEach(movie => {
+          const movieCard = document.createElement('div');
+          movieCard.className = 'col-md-4 mb-4';
+          movieCard.innerHTML = `
+            <div class="card custom-card">
+              <img src="https://image.tmdb.org/t/p/w500/${movie.poster_path}" class="card-img-top" alt="${movie.title}">
+              <div class="card-body">
+                <h5 class="card-title">${movie.title}</h5>
+                <p class="card-text">${movie.overview}</p>
+              </div>
+            </div>
+          `;
+          moviesList.appendChild(movieCard);
+        });
+      })
+      .catch(error => console.error('Error:', error));
+  }
+
+  // Llama a la función para cargar las películas al cargar la página
+  window.onload = getMovies;
+</script>
+
+</body>
+</html>

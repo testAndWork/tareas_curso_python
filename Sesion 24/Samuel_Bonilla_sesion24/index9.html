@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejemplo de Uso de API con Bootstrap</title>
+  <!-- Enlace a los archivos CSS de Bootstrap -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/test.css">
+</head>
+<body>
+
+<div class="container mt-5">
+  <h1>Listado de Películas</h1>
+  <div id="movies-list" class="row"></div>
+</div>
+
+<!-- Enlace a los archivos JavaScript de Bootstrap y jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+  // Función para obtener y mostrar las películas desde la API
+  function getMovies() {
+    fetch('https://api.themoviedb.org/3/discover/movie?api_key=b2b43b3b81c1505569870fc912cae15c')
+      .then(response => response.json())
+      .then(data => {
+        const moviesList = document.getElementById('movies-list');
+        data.results.forEach(movie => {
+          const movieCard = document.createElement('div');
+          movieCard.className = 'col-md-4 mb-4';
+          movieCard.innerHTML = `
+            <div class="card">
+              <img src="https://image.tmdb.org/t/p/w500/${movie.poster_path}" class="card-img-top" alt="${movie.title}">
+              <div class="card-body">
+                <h5 class="card-title">${movie.title}</h5>
+                <p class="card-text">${movie.overview}</p>
+              </div>
+            </div>
+          `;
+          moviesList.appendChild(movieCard);
+        });
+      })
+      .catch(error => console.error('Error:', error));
+  }
+
+  // Llama a la función para cargar las películas al cargar la página
+  window.onload = getMovies;
+</script>
+
+</body>
+</html>

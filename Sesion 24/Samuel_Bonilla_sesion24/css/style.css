@@ -1,0 +1,13 @@
+h2 {
+    color: brown;
+    border-color: blue;
+    background-color: bisque;
+}
+
+h3 {
+    color: "green",
+    font_family : "Comic Sans MS",
+    font_size: "1.2em",
+    font_weight: "bold",
+    box_shadow: "rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px",
+}
