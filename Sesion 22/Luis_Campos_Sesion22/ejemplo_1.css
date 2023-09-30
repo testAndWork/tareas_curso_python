@@ -1,0 +1,15 @@
+.button{
+    transition: transform 0.3s;
+    width: 100px;
+    height: 50;
+    background-color: cornflowerblue;
+    color: aliceblue;
+    border: none;
+    cursor: pointer;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+.button:hover{
+    transform: scale(2);
+}

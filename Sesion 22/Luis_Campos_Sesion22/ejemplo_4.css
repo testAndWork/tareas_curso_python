@@ -1,0 +1,53 @@
+h1 {
+    color: cadetblue;
+    text-align: center;
+}
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.div1, .div2, .div3 {
+    width: 5vw;
+    height: 5vh;
+    background: rgb(54, 54, 209);
+    position: absolute;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.div1 {
+    animation-name: mymove;
+    animation-delay: 0s;
+}
+
+.div2 {
+    animation-name: mymove;
+    animation-delay: 1s;
+}
+
+.div3 {
+    animation-name: mymove;
+    animation-delay: 2s;
+}
+
+@keyframes mymove {
+    0%, 100%{
+        left: 0vw;
+        top: 0vh;
+    }
+    25% {
+        left: 95vw;
+        top: 0vh;
+    }
+    50% {
+        left: 95%;
+        top: 90vh;
+    }
+    75% {
+        left: 0vw;
+        top: 90vh;
+    }
+}
