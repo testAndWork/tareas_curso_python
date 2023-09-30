@@ -1,0 +1,28 @@
+h2 {
+    text-align: center;
+    color: brown;
+}
+
+.container {
+    position: static;
+    width: 100vw;            /* viewport widt - ancho total de la ventana*/
+    height: 100vh;
+    overflow: hidden;       /* comportamiento - ocultar*/
+    cursor:pointer;
+}
+
+.particle {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    animation: particleAnimation 1s ease-in forwards;
+}
+@keyframes particleAnimation {
+    to{
+        transform: translate(calc(random()*200px), calc(random()*200px) scale (0));
+        opacity: 0;
+
+    }
+
+}

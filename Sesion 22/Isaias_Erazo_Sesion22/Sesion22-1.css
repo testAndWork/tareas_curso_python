@@ -1,0 +1,14 @@
+.button {
+    transition: transform 0.3s; /* Efecto de animacion*/
+    width: 100px;
+    height: 50px;
+    background-color: rgba(7, 156, 106, 0.651);
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+.button:hover {     /* Configurando la animacion*/
+    transform: scale(2); 
+}
