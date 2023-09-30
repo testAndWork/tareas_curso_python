@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    
+}
+
+h1{
+    font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+color:  #a48756;
+text-align: center;
+}
+
+ol {
+    padding: 10% ;
+    list-style-type: decimal;
+}
+
+li {
+    padding: 10px;
+     border: 1px solid#f0eeee;
+     background-color: #bfbdee;
+     margin-bottom: 5px;
+     margin-left: 10px;
+     margin-right:  60px; 
+}
+
+
+li:hover{
+    background-color: aquamarine;
+    color: #d2d8e5;
+}
+
+li a {
+    color: #8c0b0b;
+    text-decoration: none;
+
+}

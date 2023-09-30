@@ -1,0 +1,39 @@
+header {
+    background-color: rgb(221, 202, 202) ;
+
+}
+
+body {
+        padding-top: 11em;
+        color: rgb(140, 28, 245);
+        background-color: rgb(188, 225, 212);    
+}
+
+ul nav{
+    color: rgb(118, 118, 136);
+    position: absolute;
+    top: 4em;
+    left: 5em;
+    width: 8em;
+    background-color: aliceblue;
+}
+
+h1 {
+    color: rgb(176, 24, 24)
+}
+h2 {
+    color: chocolate;
+}
+p {
+    color: rgb(117, 113, 223);
+}
+pre {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(27, 29, 33);
+    background-color:rgb(105, 215, 105) ;
+    font-size: 20px;
+}
+
+section{
+    background-color: rgb(17, 1, 1);
+}

@@ -1,0 +1,49 @@
+/*  Estilo para encabezados   */
+
+h1 {
+    color: brown;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+    text-align: center;
+}
+
+
+h2 {
+    color: rgb(188, 103, 72);
+    font-family:'Courier New', Courier, monospace;
+    font-size: 40px ;
+    text-align: right;
+}
+
+
+/* Estilo para los parrafor*/
+
+p {
+ color: blueviolet;
+ background-color: antiquewhite;
+ font-family:Arial, Helvetica, sans-serif;
+ font-size: 20px;
+ line-height: 1.2; 
+ border: 3px solid black;
+ padding: 30px;
+ text-align: justify;
+} 
+
+pre {
+
+    color: rgb(8, 67, 48);
+    background-color: rgb(154, 150, 144);
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 2.0;
+} 
+
+article {
+    color: rgb(56, 52, 166);
+    background-color: rgb(218, 168, 93);
+    font-family:'Courier New', Courier, monospace;
+    font-size: 13px;
+    line-height: 2.0;
+    padding: 20px;
+
+}
