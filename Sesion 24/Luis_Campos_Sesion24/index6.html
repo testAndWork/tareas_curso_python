@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tarea de Bootstrap</title>
+  <!-- Enlace a los archivos CSS de Bootstrap -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Bootstrap-Modal</h1>
+<!-- Botón que abre el modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+    Abrir Modal
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <!-- Encabezado del modal -->
+        <div class="modal-header">
+          <h4 class="modal-title">Título del Modal</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Contenido del modal -->
+        <div class="modal-body">
+          <p>Este es el contenido del modal. Puedes agregar aquí cualquier tipo de contenido que desees mostrar.</p>
+        </div>
+        
+        <!-- Pie del modal -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+<!-- Enlace a los archivos JavaScript de Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <title>Ejemplo de Componentes de Bootstrap</title>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Habilidades</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Inicio</a>
+      </li>
+      <li class="nav-item">
+        <button class="btn btn-link nav-link" data-toggle="modal" data-target="#userInfoModal">Usuario</button>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container mt-4">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Página Actual</li>
+    </ol>
+  </nav>
+  
+  <div class="row">
+    <div class="col-md-4 mb-4">
+      <div class="card">
+        <img src="https://www.ionos.es/digitalguide/fileadmin/DigitalGuide/Teaser/html-tagst.jpg" class="card-img-top" alt="Imagen de ejemplo">
+        <div class="card-body">
+          <h5 class="card-title">HTML</h5>
+          <p class="card-text">Creacion de paginas web Utilizando HTML, CSS y JavaScrip.</p>
+          <a href="#" class="btn btn-primary">Leer más</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-md-4 mb-4">
+      <div class="card">
+        <img src="https://www.internetya.co/wp-content/uploads/2017/02/mantenimiento-reparacion-bases-de-datos-mysql.jpg" class="card-img-top" alt="Imagen de ejemplo">
+        <div class="card-body">
+          <h5 class="card-title"> SQL server y MySQL</h5>
+          <p class="card-text">Creacion de bases y administracion de base de Datos en SQL server y MySQL.</p>
+          <a href="#" class="btn btn-primary">Leer más</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://bs-uploads.toptal.io/blackfish-uploads/components/blog_post_page/content/cover_image_file/cover_image/1285782/regular_1708x683_COVER-dcbcd112f1d502d97d7f2467c1ce21da.png" class="card-img-top" alt="Imagen de ejemplo">
+          <div class="card-body">
+            <h5 class="card-title">Programcion C++ y C#</h5>
+            <p class="card-text">Creaciones de aplicaciones utilizando el lenguaje de programacion en C++ y C#</p>
+            <a href="#" class="btn btn-primary">Leer más</a>
+          </div>
+        </div>
+      </div>
+    
+    <div class="col-md-4 mb-4">
+      <div class="card">
+        <img src="https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2023/04/raspberry-lanza-editor-codigo-aprender-python-lenguaje-ia-3008158.jpg?tf=3840x" class="card-img-top" alt="Imagen de ejemplo">
+        <div class="card-body">
+          <h5 class="card-title">Programcion Python</h5>
+          <p class="card-text">Creacion de aplicaciones utlizando el lenguaje de Programacion en PYTHON.</p>
+          <a href="#" class="btn btn-primary">Leer más</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Modal de Información de Usuario -->
+<div class="modal fade" id="userInfoModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Información de Usuario</h5>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p>Aquí puedes mostrar la información del usuario, como nombre, correo electrónico, etc.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+ <!-- Toast de notificación -->
+ <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-delay="5000">
+  <div class="toast-header">
+    <strong class="mr-auto">Notificación</strong>
+    <small>Hace un momento</small>
+    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Cerrar">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="toast-body">
+    ¡Bienvenido! Gracias por visitar nuestro sitio.
+  </div>
+</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+  // Mostrar el toast cuando la página se cargue
+  $(document).ready(function(){
+    $('.toast').toast('show');
+  });
+</script>
+
+</body>
+</html>
+
