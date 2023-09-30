@@ -1,0 +1,24 @@
+        h1 {
+            color: brown;
+        }
+        h2 {
+            color: chocolate;
+        }
+        p {
+            color: rgb(201, 144, 255);
+        }
+        body {
+            color: blueviolet;
+            background-color: aquamarine;
+        }
+        header {
+            background-color: floralwhite;
+        }
+        ul nav {
+            color: rgb(148, 69, 121);
+            position:absolute;
+            top: 4em;
+            left: 5em;
+            width: 8em;
+            background-color: antiquewhite;
+        }
