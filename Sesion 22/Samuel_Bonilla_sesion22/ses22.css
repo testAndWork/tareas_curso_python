@@ -1,0 +1,16 @@
+.button {
+    transition: transform 0.3s; /* Efecto de animación*/
+    width: 100px;
+    height: 50px;
+    background-color: cornflowerblue;
+    color: aliceblue;
+    border: none;
+    cursor: pointer;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+.button:hover {
+    /*Configurando la animación*/
+    transform: scale(2);
+}
