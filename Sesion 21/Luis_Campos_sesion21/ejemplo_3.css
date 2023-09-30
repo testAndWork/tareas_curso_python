@@ -1,0 +1,36 @@
+main {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+table {
+
+    border-collapse: collapse;
+    width:  100%;
+}
+
+td, th {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 2px solid #ca1616;
+}
+
+th {
+    background-color: rgb(149, 116, 73);
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.5
+}
+
+tr:nth-child(even) {
+
+    background-color: #cadeca;
+
+}
+tr:nth-child(odd ) {
+
+    background-color: #e8ecfb;
+
+}
+
+

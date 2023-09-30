@@ -1,0 +1,28 @@
+header {
+    background-color: blanchedalmond;
+}
+body {
+    padding-top: 11em;
+    color: rgb(5, 133, 39);
+    background-color: rgb(219, 222, 186);
+}
+ul {
+    position: absolute;
+    top: 4em;
+    left: 5em;
+    width: 8em;
+}
+h1 {
+    color: rgb(248, 56, 56);
+}
+h2 {
+    color: orange;
+}
+p {
+    color: cadetblue;
+}
+pre {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: cornflowerblue;
+    background-color: darkgray;
+}

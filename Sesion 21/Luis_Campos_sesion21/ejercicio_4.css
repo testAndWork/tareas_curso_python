@@ -1,0 +1,34 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(218, 79, 79);
+    text-align: center;
+}
+
+ol {
+    padding: 10%;
+    list-style-type: decimal;
+}
+
+li {
+    padding: 10px;
+    border: 1px solid #aa9ef2;
+    background-color: #8dcdf2;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    margin-right: 60px;
+}
+
+li:hover {
+    background-color: aquamarine;
+    color: red;
+}
+
+li a {
+    color: #ab3030;
+    text-decoration: none;
+}
