@@ -1,0 +1,33 @@
+h2{
+    color: rebeccapurple;
+}
+
+body{
+    padding-left: 11em;
+    color: red;
+    background-color: aquamarine;
+}
+
+header{
+    background-color: antiquewhite;
+}
+
+pre{
+    font-family: 'Courier New', Courier, monospace;
+    color: cornflowerblue;
+    background-color: blue;
+    font-size: 24px;
+}
+
+p{
+    color: black;
+}
+
+ul{
+    position: absolute;
+    
+}
+
+section{
+    background-color: red;
+}
