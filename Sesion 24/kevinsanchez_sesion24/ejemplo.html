@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo</title>
+    <!-- Enlace a los archivos CSS de Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Mi Sitio Web</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Perfil</a>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-link nav-link" data-toggle="modal" data-target="#userInfoModal">Informacion</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="container mt-4">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Perfil</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Página Actual</li>
+            </ol>
+        </nav>
+
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://www.ntuclearninghub.com/documents/51786/4216795/Python-Symbol.png/369e410e-a90f-f887-c2dc-61f7ef761476?t=1679043970578" class="card-img-top" alt="Imagen de ejemplo">
+                    <div class="card-body">
+                        <h5 class="card-title">Pyhton</h5>
+                        <p class="card-text">Programacion en Pyhton</p>
+                        <a href="#" class="btn btn-primary">Leer más</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://developer.okta.com/assets-jekyll/blog/tutorial-kotlin-beginners-guide/kotlin-logo-social-21c8518b19eb96d96f35e0057bb92b7e1281a24820e0fa09e39c42f184bd7faa.png" class="card-img-top" alt="Imagen de ejemplo">
+                    <div class="card-body">
+                        <h5 class="card-title">Kotlin</h5>
+                        <p class="card-text">Programacion en kotlin.</p>
+                        <a href="#" class="btn btn-primary">Leer más</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://lthub.ubc.ca/files/2021/06/GitHub-Logo.png" class="card-img-top" alt="Imagen de ejemplo">
+                    <div class="card-body">
+                        <h5 class="card-title">GitHub</h5>
+                        <p class="card-text">Lineas de comandos de git.</p>
+                        <a href="#" class="btn btn-primary">Leer más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal de Información de Usuario -->
+    <div class="modal fade" id="userInfoModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Información de Usuario</h5>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <header>
+                        <h2>Nombre</h2>
+                        <p>Kevin Alejandro Sanchez Crespin</p>
+                    </header>
+                    <header>
+                        <h2></h2>
+                    </header>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast de notificación -->
+    <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-delay="5000">
+        <div class="toast-header">
+            <strong class="mr-auto">Notificación</strong>
+            <small>Hace un momento</small>
+            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Cerrar">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="toast-body">
+            ¡Bienvenido! Gracias por visitar nuestro sitio.
+        </div>
+    </div>
+
+    <!-- Enlace a los archivos JavaScript de Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
