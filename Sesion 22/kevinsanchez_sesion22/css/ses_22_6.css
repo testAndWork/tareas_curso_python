@@ -1,0 +1,9 @@
+.cinta{
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    *display: inline-block;
+    zoom: 1;
+    margin: 20px auto 10px;
+}
+

@@ -1,0 +1,41 @@
+h2{
+    color: green;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+table{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+    margin: 45px;
+    text-align: left;
+    border-collapse: collapse;
+    border: 2px;
+}
+
+th{
+    font-size: 13pt;
+    font-weight: normal;
+    padding: 8px;
+    background: #86b5d0;
+    border-top: 4px solid #142ea2;
+    border-bottom: 4px solid #4e73e1;
+    color: rgb(246,247,247);
+}
+
+td{
+    padding: 8px;
+    background: #e8edff;
+    border-bottom: 4px solid rgb(183, 188, 203);
+    color: #669;
+    border-top: 4px solid transparent;
+}
+
+tr:hover td{
+    background: #b3ccb9;
+    color: rgb(19, 19, 96);
+}
